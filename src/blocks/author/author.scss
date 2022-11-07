@@ -1,0 +1,72 @@
+.author {
+	$self: &;
+	margin-bottom: 30px;
+
+	&__inner {
+		display: flex;
+		padding-bottom: 28px;
+		border-bottom: 1px solid #afafaf;
+		align-items: flex-start;
+	}
+
+	&__image {
+		overflow: hidden;
+		border-radius: 10px;
+		margin-right: 25px;
+		max-width: 120px;
+		min-width: 100px;
+		
+		img {
+			display: block;
+		}
+		
+		@include media('<=xs') {
+			margin-right: 20px;
+		}
+	}
+
+	&__side {
+
+	}
+
+	&__name {
+		padding-top: 5px;
+		font-size: 32px;
+		color: #6C47FF;
+		font-family: "MB", sans-serif;
+
+		@include media('<=xs') {
+			font-size: 28px;
+		}
+
+		@include media('<=xxs') {
+			font-size: 24px;
+		}
+	}
+
+	&__date {
+		color: #575757;
+		margin-bottom: 20px;
+		font-size: 16px;
+
+		@include media('<=xs') {
+			// font-size: 18px;
+		}
+
+		@include media('<=xxs') {
+			font-size: 15px;
+		}
+	}
+	
+	&__info {
+		font-size: 16px;
+
+		@include media('<=xs') {
+			// font-size: 18px;
+		}
+
+		@include media('<=xxs') {
+			font-size: 15px;
+		}
+	}
+}

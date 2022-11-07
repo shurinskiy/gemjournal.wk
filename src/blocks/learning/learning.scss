@@ -1,0 +1,14 @@
+.learning {
+	$self: &;
+
+	&__title.title {
+		margin-bottom: 45px;
+	}
+
+	&__items {
+		
+		@include media('<=md') {
+			margin-bottom: 45px;
+		}
+	}
+}

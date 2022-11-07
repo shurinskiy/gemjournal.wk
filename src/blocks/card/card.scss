@@ -1,0 +1,266 @@
+.card {
+	$self: &;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 12px;
+	background-color: #fff;
+	display: flex;
+	flex-flow: column nowrap;
+
+	&_large {
+		
+		#{$self}__image {
+			display: block;
+			height: 340px;
+		
+			@include media('<=xxxlg') {
+				// height: 400px;
+			}
+		
+			@include media('<=xxs') {
+				height: 220px;
+			}
+		
+			@include media('<=xxxlg') {
+				// height: 400px;
+			}
+		}
+		
+		#{$self}__content {
+			padding: 20px 38px;
+			
+			@include media('<=md') {
+				padding: 32px 27px;
+			}
+		
+			@include media('<=sm') {
+				padding: 20px;
+			}
+		}
+		
+		#{$self}__tags a {
+			font-size: 15px;
+		
+			@include media('<=xlg') {
+				font-size: 18px;
+			}
+		
+			@include media('<=xs') {
+				font-size: 12px;
+			}
+		}
+		
+		#{$self}__title {
+			font-size: 23px;
+			line-height: 1.1;
+			margin-bottom: 20px;
+		
+			@include media('<=xxxlg') {
+				// font-size: 26px;
+			}
+		
+			@include media('<=xs') {
+				font-size: 17px;
+			}
+		}
+
+		#{$self}__text {
+			font-size: 17px;
+		
+			@include media('<=xxxlg') {
+				// font-size: 20px;
+			}
+		
+			@include media('<=xs') {
+				font-size: 14px;
+			}
+			
+			@include media('<=lg') {
+				// font-size: 18px;
+			}
+		}
+
+		#{$self}__since {
+			font-size: 17px;
+			line-height: 1.4;
+			min-height: 22px;
+			background: url('#{$images-path}icons-sprite.svg#icon-clock-view-lil') center left / 22px 22px no-repeat transparent;
+			padding-left: 30px;
+			
+			@include media('<=xxxlg') {
+				font-size: 20px;
+			}
+		
+			@include media('<=xlg') {
+				font-size: 18px;
+			}
+		
+			@include media('<=xs') {
+				font-size: 16px;
+				background: none;
+				padding: 0;
+			}
+		}
+
+		#{$self}__link {
+			color: #4B4B4B;
+			font-size: 17px;
+			line-height: 1.4;
+			min-height: 22px;
+			background: url('#{$images-path}icons-sprite.svg#icon-admin-view-lil') center left / 18px 20px no-repeat transparent;
+			padding-left: 28px;
+		
+			@include media('<=xxxlg') {
+				font-size: 20px;
+			}
+		
+			@include media('<=xlg') {
+				font-size: 18px;
+			}
+		
+			@include media('<=xs') {
+				font-size: 16px;
+				background: none;
+				color: #5843D9;
+				padding: 0;
+			}
+		}
+	}
+
+	&_wide {
+		flex-flow: row nowrap;
+		align-items: stretch;
+		
+		#{$self}__image {
+			height: auto;
+			width: 50%;
+
+			img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		
+		#{$self}__content {
+			box-sizing: border-box;
+			width: 50%;
+			padding: 32px 50px;
+		}
+	}
+
+	&_banner {
+		display: block;
+		overflow: hidden;
+
+		img {
+			display: block;
+			// width: 100%;
+			// height: 100%;
+			// object-fit: cover;
+		}
+	}
+
+	&__image {
+		display: block;
+		height: 130px;
+		
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			object-position: center top;
+		}
+	}
+
+	&__content {
+		padding: 10px 18px 20px;
+		display: flex;
+		flex-grow: 1;
+		flex-flow: column nowrap;
+		
+		@include media('<=sm') {
+			padding: 20px;
+		}
+	}
+
+	&__text {
+		text-decoration: none;
+		color: inherit;
+		margin-bottom: 20px;
+	}
+
+	&__tags {
+		margin-bottom: 14px;
+
+		a {
+			display: inline-block;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: #5843D9;
+			font-family: "MB", sans-serif;
+			font-size: 12px;
+			line-height: 1.2;
+			margin-right: 5px;
+
+			&::before {
+				content: '#';
+			}
+		}
+	}
+
+	&__title {
+		font-family: "MEB", sans-serif;
+		font-size: 17px;
+		line-height: 1.1;
+		margin-bottom: 15px;
+
+		a {
+			color: #000;
+			text-decoration: none;
+		}
+		
+		@include media('<=xxxlg') {
+			// font-size: 18px;
+		}
+	}
+
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: auto;
+	}
+
+	&__since {
+		color: #4B4B4B;
+		
+		@include media('<=xlg') {
+			font-size: 16px;
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	
+		@include media('<=xlg') {
+			font-size: 16px;
+		}
+	}
+
+	&__talk {
+		display: block;
+		text-decoration: none;
+		border-radius: 10px;
+		background-color: #F5ECFA;
+		white-space: nowrap;
+		color: #5843D9;
+		padding: 10px 18px 10px 45px;
+		background: url('#{$images-path}icons-sprite.svg#icon-talk-view-lil') center left 10px / 22px 22px no-repeat #F5ECFA;
+	}
+}

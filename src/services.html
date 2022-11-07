@@ -1,0 +1,76 @@
+@@include("_head.html") 
+@@include("_header.html")
+@@include("_hero.html", {"img":"hero-image-2.png"}) 
+
+<main class="layout">
+	<div class="layout__breadcrumbs breadcrumbs">
+		<div class="container">
+			<div class="breadcrumbs__inner">
+				<a href="./">Главная</a>
+				<a href="./">Обучение</a>
+			</div>
+		</div>
+	</div>
+
+	@@include("_wide-banner.html") 
+
+	<section class="services">
+		<div class="container">
+			<div class="services__title title"><h1 class="title__text">Сервисы</h1></div>
+			<div class="services__items">
+				<div class="s-card s-card_service s-card_outlined">
+					<a href="./" class="s-card__image">
+						<img src="./images/stuff/services-image-0.png" alt="">
+					</a>
+					<div class="s-card__content">
+						<div class="s-card__tags">
+							<a href="./">Арбитраж трафика</a>
+							<a href="./">Бизнес</a>
+						</div>
+						<h3 class="s-card__cap">Profit Partners — это надежная партнерская программа в сфере гемблинга, которая работает более 10 лет на рынке и активно развивается.</h3>
+						<div class="s-card__text">
+							<p>Мобильное приложение на Android, которое позволяет поднимать приватные мобильные прокси с телефона. Самая низкая цена в мире на приватные мобильные прокси!</p>
+							<ul>
+								<li>HTTP/SOCKS5</li>
+								<li>До 15 Мбит/сек</li>
+								<li>IP History</li>
+								<li>Смена IP адреса</li>
+								<li>Telegram-бот для уведомлений и управления сменой IP-адреса</li>
+								<li>Подсчет потребляемого трафика, легкая и быстрая настройка</li>
+								<li>Стоимость от 350 руб/мес.</li>
+							</ul>
+							<p>По промокоду <strong>CONVERSION вы получите скидку 15%</strong> на первую покупку на тариф BigDaddy.</p>
+						</div>
+						<a class="s-card__button button button_grd" href="./">Перейти на сайт</a>
+					</div>
+				</div>
+
+				@@include("_s-card.html", {
+					"img":"services-image-1.jpg",
+					"service":true
+				}) 
+
+				@@include("_s-card.html", {
+					"img":"services-image-3.jpg",
+					"service":true
+				}) 
+
+				@@include("_s-card.html", {
+					"img":"services-image-4.png",
+					"service":true
+				}) 
+			</div>
+			<div class="services__pagination pagination">
+				<a href="./" class="pagination__item active">1</a>
+				<a href="./" class="pagination__item">2</a>
+				<a href="./" class="pagination__item">3</a>
+				<a href="./" class="pagination__item">4</a>
+				<a href="./" class="pagination__item">5</a>
+				<span class="pagination__item pagination__item_pass">...</span>
+				<a href="./" class="pagination__item">50</a>
+			</div>
+		</div>
+	</section>
+</main>
+
+@@include("_bottom.html")

@@ -1,0 +1,142 @@
+.p-form {
+	$self: &;
+	box-sizing: border-box;
+	transition: height 0.3s;
+
+	&_success {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 30px 0;
+
+		span {
+			color: #007a14;
+			max-width: 550px;
+		}
+	}
+
+	&__title {
+		font-family: "MB", sans-serif;
+		font-size: 20px;
+		line-height: 1.4;
+		margin-bottom: 10px;
+	}
+
+	&__alert {
+		box-sizing: border-box;
+		width: 100%;
+		min-height: 20px;
+		font-size: 13px;
+		line-height: 1.2;
+		color: #F12C50;
+		margin-bottom: 5px;
+
+		span {
+			display: block;
+
+			&.loading {
+				text-align: center;
+			}
+		}
+	}
+
+	&__fields {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px;
+	}
+
+	&__field {
+		margin: 0 10px 20px;
+		width: calc(50% - 20px);
+		
+		@include media('<=xs') {
+			width: calc(100% - 20px);
+		}
+
+		input {
+			box-sizing: border-box;
+			display: block;
+			width: 100%;
+			background: #F8F8F8;
+			border: 1px solid #D9DADB;
+			border-radius: 8px;
+			padding: 15px;
+			min-height: 60px;
+		}
+
+		&_region {
+			@include hide();			
+		}
+	}
+
+	&__area {
+		margin: 0 10px 20px;
+		width: calc(100% - 20px);
+
+		textarea {
+			box-sizing: border-box;
+			display: block;
+			width: 100%;
+			background: #F8F8F8;
+			border: 1px solid #D9DADB;
+			border-radius: 8px;
+			padding: 15px;
+			min-height: 150px;
+			resize: none;
+		}
+	}
+
+	&__check {
+		display: inline-flex;
+		align-items: center;
+		font-size: 14px;
+		margin: 0 10px 20px;
+		width: calc(100% - 20px);
+
+		input[type='checkbox'] {
+			box-sizing: border-box;
+			margin-right: 10px;
+			flex-shrink: 0;
+			appearance: none;
+			background: #F8F8F8;
+			border: 1px solid #D9DADB;
+			width: 24px;
+			height: 24px;
+			overflow: hidden;
+			border-radius: 4px;
+			flex-shrink: 0;
+			cursor: pointer;
+			
+			&:checked {
+				border: 1px solid #6456FF;
+				background-color: #6456FF;
+
+				&::before {
+					display: block;
+					content: '';
+					width: 22px;
+					height: 22px;
+					background: url('#{$images-path}icons-sprite.svg#icon-check-view-white') center / 14px 10px no-repeat transparent;
+				}
+			}
+		}
+	}
+
+	&__submit {
+		&.button {
+			font-size: 14px;
+			min-height: 58px;
+			
+			&.processed {
+				background-image: url('#{$images-path}ic-loading.svg');
+				background-position: center;
+				background-repeat: no-repeat;
+	
+				span {
+					display: none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,130 @@
+.h-rows {
+	$self: &;
+	margin-bottom: 80px;
+
+	&__title {
+
+	}
+
+	&__items {
+		margin-bottom: 40px;
+	}
+
+	&__item {
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		background-color: #fff;
+		border-radius: 15px;
+		margin-bottom: 14px;
+		padding: 25px 30px 25px 40px;
+		min-height: 106px;
+		
+		@include media('<=xlg') {
+			padding: 20px 30px;
+		}
+		
+		@include media('<=md') {
+			display: block;
+			padding: 20px;
+		}
+	}
+
+	&__marker {
+		width: 42px;
+		height: 42px;
+		border: 3px solid #BBD0AB;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 25px;
+		line-height: 1.2;
+		flex-shrink: 0;
+		margin-right: 40px;
+		
+		&_top {
+			width: 48px;
+			height: 48px;
+			background: url('./images/ic-crown.png') center / contain no-repeat transparent;
+			border: none;
+			border-radius: 0;
+		}
+		
+		@include media('<=xlg') {
+			width: 45px;
+			height: 45px;
+			margin-right: 30px;
+		}
+		
+		@include media('<=md') {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__logo {
+		display: block;
+		width: 100%;
+		max-width: 140px;
+		margin-right: 125px;
+		
+		img {
+			display: block;
+		}
+		
+		@include media('<=xlg') {
+			margin-right: 50px;
+			min-width: 150px;
+		}
+		
+		@include media('<=md') {
+			width: 100%;
+			max-width: 190px;
+			margin: 0 auto 30px;
+		}
+	}
+
+	&__text {
+		margin-right: 80px;
+		max-width: 700px;
+		font-size: 16px;
+		
+		@include media('<=md') {
+			margin: 0 auto 30px;
+			text-align: center;
+		}
+	}
+
+	&__button {
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 10px;
+		text-decoration: none;
+		border-radius: 8px;
+		color: #9C4FFE;
+		background-color: #F5ECFA;
+		font-family: "MB", sans-serif;
+		font-size: 15px;
+		height: 50px;
+		width: 100%;
+		max-width: 190px;
+		margin-left: auto;
+		flex-shrink: 0;
+		
+		@include media('<=md') {
+			margin: 0 auto;
+		}
+	}
+
+	&__all-btn {
+		display: none;
+
+		@include media('<=md') {
+			display: flex;
+			margin: 0 auto;
+		}
+	}
+}

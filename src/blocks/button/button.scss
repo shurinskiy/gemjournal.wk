@@ -1,0 +1,87 @@
+.button {
+	$self: &;
+	@extend %reset-button;
+	font-family: "MSB", sans-serif;
+	font-size: 16px;
+	border-radius: 10px;
+	text-decoration: none;
+	color: #fff;
+	display: flex;
+	padding: 5px 10px;
+	box-sizing: border-box;
+	align-items: center;
+	justify-content: center;
+	border: 3px solid transparent;
+	width: 100%;
+		
+	@include media('<=xxlg') {
+		// font-size: 20px;
+	}
+
+	&_top {
+		height: 47px;
+		background-color: #6456FF;
+		max-width: 250px;
+		min-width: 200px;
+		box-shadow: 0 0 20px rgba(100, 86, 255, 0.8);
+		
+		&::after {
+			display: block;
+			content: '';
+			width: 30px;
+			height: 30px;
+			background: url('./images/ic-fire.png') center / contain no-repeat transparent;
+			margin-left: 10px;
+			transform: translateY(-3px);
+		}
+		
+		@include media('<=xxxlg') {
+			// max-width: 280px;
+			height: 50px;
+			
+			&::after {
+				width: 30px;
+				height: 30px;
+			}
+		}
+	}
+
+	&_solid {
+		height: 50px;
+		background-color: #000;
+		max-width: 250px;
+		
+		@include media('<=xxlg') {
+			// height: 62px;
+		}
+	}
+
+	&_outlined {
+		height: 55px;
+		color: #000;
+		border-color: #6456FF;
+		background-color: transparent !important;
+		max-width: 250px;
+		
+		@include media('<=xxlg') {
+
+		}
+	}
+
+	&_lil {
+		border-color: #6456FF;
+		background-color: #6456FF;
+	}
+
+	&_grd {
+		height: 76px;
+		border: none;
+		background: none;
+		background: linear-gradient(45deg, #6456FF 0%, #9B93FF 100%);
+		max-width: 330px;
+		
+		@include media('<=xxlg') {
+			height: 68px;
+		}
+	}
+}

@@ -1,0 +1,62 @@
+.sidebar {
+	$self: &;
+	box-sizing: border-box;
+	padding-bottom: 20px;
+	
+	@include media('<=xs') {
+		margin: 0;
+	}
+
+	&__inner {
+		position: sticky;
+		top: 120px;
+
+		@include media('<=sm') {
+			position: static;
+			display: flex;
+			flex-flow: row wrap;
+			margin: 0 -10px;
+		}
+			
+		@include media('<=xs') {
+			margin: 0 auto;
+			width: 100%;
+			max-width: 400px;
+		}
+	}
+
+	&__card {
+		margin-bottom: 22px;
+
+		@include media('<=sm') {
+			margin: 0 10px 22px;
+			width: calc(50% - 20px);
+		}
+		
+		@include media('<=xs') {
+			margin: 0 0 22px;
+			// width: calc(100% - 20px);
+			width: 100%;
+		}
+		
+		&_banner {
+			@include media('<=xs') {
+				height: 300px;
+			}
+		}
+
+		&_banner-long {
+			max-height: 400px;
+			max-width: 275px;
+
+			@include media('<=sm') {
+				order: 1;
+				margin: 0 auto 22px;
+			}
+
+			@include media('<=xs') {
+				margin: 0 auto 22px;
+			}
+		}
+	}
+}

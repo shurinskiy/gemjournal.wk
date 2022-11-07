@@ -1,0 +1,55 @@
+.feed {
+	$self: &;
+	margin-bottom: 45px;
+
+	&__title.title {
+		margin-bottom: 25px;
+	}
+
+	&__items {
+		display: flex;
+		flex-flow: row wrap;
+		margin: 0 -12px;
+		
+		@include media('<=xlg') {
+			margin: 0 -10px;
+		}
+
+		@include media('<=md') {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__item {
+		margin: 0 12px 24px;
+		min-height: 300px;
+		width: calc(99.9% / 12 * 3 - 24px);
+		
+		@include media('<=xlg') {
+			margin: 0 10px 20px;
+			width: calc(99.9% / 12 * 3 - 20px);
+		}
+		
+		@include media('<=lg') {
+			width: calc(99.9% / 12 * 4 - 20px);
+		}
+		
+		@include media('<=md') {
+			width: calc(99.9% / 12 * 6 - 20px);
+		}
+		
+		@include media('<=xs') {
+			width: calc(99.9% - 20px);
+		}
+	}
+
+	&__all-btn {
+		display: none;
+		max-width: 320px;
+		margin: 0 auto;
+
+		@include media('<=md') {
+			display: flex;
+		}
+	}
+}

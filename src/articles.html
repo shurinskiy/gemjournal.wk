@@ -1,0 +1,127 @@
+@@include("_head.html") 
+@@include("_header.html")
+@@include("_hero.html", {"img":"hero-image-2.png"}) 
+
+<main class="layout">
+	<div class="layout__breadcrumbs breadcrumbs">
+		<div class="container">
+			<div class="breadcrumbs__inner">
+				<a href="./">Главная</a>
+				<a href="./">Все Статьи</a>
+			</div>
+		</div>
+	</div>
+
+	@@include("_wide-banner.html") 
+
+	<!-- <section class="author">
+		<div class="container">
+			<div class="author__inner">
+				<div class="author__image"><img src="./images/stuff/author-image.png" alt=""></div>
+				<div class="author__side">
+					<div class="author__name">Мария Дорвей</div>
+					<div class="author__date">на сайте с 2021</div>
+					<div class="author__info">Мария Дорвей — СЕО арбитражной команды GTX.</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+	<section class="feed">
+		<div class="container">
+			<div class="feed__title title title_sort">
+				<h1 class="title__text">Все статьи</h1>
+				<div class="title__sort">
+					<span>Сортировка: </span>
+					<button class="active">Популярные</button>
+					<button>Новые</button>
+				</div>
+			</div>
+			<div class="feed__items">
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-1.png",
+					"link":true
+				})
+	
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-2.png",
+					"link":true
+				})
+	
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-3.png",
+					"link":true
+				})
+	
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-4.png",
+					"link":true
+				})
+
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-5.png",
+					"link":true
+				})
+	
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-6.png",
+					"link":true
+				})
+	
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-7.png",
+					"link":true
+				})
+	
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-8.png",
+					"link":true
+				})
+
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-1.png",
+					"link":true
+				})
+	
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-2.png",
+					"link":true
+				})
+	
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-3.png",
+					"link":true
+				})
+	
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-4.png",
+					"link":true
+				})
+			</div>
+			<div class="feed__pagination pagination">
+				<a href="./" class="pagination__item active">1</a>
+				<a href="./" class="pagination__item">2</a>
+				<a href="./" class="pagination__item">3</a>
+				<a href="./" class="pagination__item">4</a>
+				<a href="./" class="pagination__item">5</a>
+				<span class="pagination__item pagination__item_pass">...</span>
+				<a href="./" class="pagination__item">50</a>
+			</div>
+		</div>
+	</section>
+
+</main>
+
+@@include("_bottom.html")

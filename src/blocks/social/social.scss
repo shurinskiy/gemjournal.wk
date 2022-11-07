@@ -1,0 +1,82 @@
+.social {
+	$self: &;
+	display: flex;
+
+	&__link {
+		display: block;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		&:not(:last-child) {
+			margin-right: 14px;
+		}
+		
+		@include media('<=xlg') {
+			// width: 55px;
+			// height: 55px;
+		}
+
+		&_tgm {
+			background-color: #229ED9;
+			background-image: url('#{$images-path}icons-sprite.svg#icon-soc-tgm-view-white');
+			background-size: 28px 28px;
+			background-position: left 10px center;
+			
+			@include media('<=xlg') {
+				// background-size: 30px 30px;
+				// background-position: left 11px center;
+			}
+		}
+
+		&_fb {
+			background-color: #4267B2;
+			background-image: url('#{$images-path}icons-sprite.svg#icon-soc-fb-view-white');
+			background-size: 13px 26px;
+			
+			@include media('<=xlg') {
+				// background-size: 14px 28px;
+			}
+		}
+
+		&_tw {
+			background-color: 	#1DA1F2;
+			background-image: url('#{$images-path}icons-sprite.svg#icon-soc-tw-view-white');
+			background-size: 25px 25px;
+			
+			@include media('<=xlg') {
+				// background-size: 28px 28px;
+			}
+		}
+
+		&_inst {
+			background-color: #8a3ab9;
+			background-image: url('#{$images-path}icons-sprite.svg#icon-soc-inst-view-white');
+			background-size: 27px 27px;
+			
+			@include media('<=xlg') {
+				// background-size: 29px 29px;
+			}
+		}
+
+		&_vk {
+			background-color: #597da3;
+			background-image: url('#{$images-path}icons-sprite.svg#icon-soc-vk-view-white');
+			background-size: 30px 18px;
+		}
+
+		&_yout {
+			background-color: #ff0000;
+			background-image: url('#{$images-path}icons-sprite.svg#icon-soc-yout-view-white');
+			background-size: 30px 20px;
+		}
+
+		&_yandex {
+			background-color: #ffdb4d;
+			background-image: url('#{$images-path}icons-sprite.svg#icon-soc-yandex-view-black');
+			background-size: 32px 32px;
+		}
+	}
+}

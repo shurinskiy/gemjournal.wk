@@ -1,0 +1,95 @@
+.q-controls {
+	$self: &;
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0 0 30px;
+	
+	@include media('<=lg') {
+		margin: 0 0 22px;
+	}
+	
+	@include media('<=xs') {
+		display: block;
+	}
+
+	&__search {
+		box-sizing: border-box;
+		height: 60px;
+		padding-right: 25px;
+		width: calc(100% - 275px);
+		
+		@include media('<=lg') {
+			padding-right: 22px;
+		}
+		
+		@include media('<=sm') {
+			width: 100%;
+			padding-right: 0;
+			margin-bottom: 22px;
+		}
+
+		form {
+			box-sizing: border-box;
+			display: flex;
+			border: 1px solid #CFCFCF;
+			background-color: #fff;
+			border-radius: 10px;
+			height: 100%;
+		}
+	
+		input[type="text"] {
+			@extend %reset-input;
+			flex-grow: 1;
+			padding: 10px 0 10px 30px;
+			font-size: 17px;
+			line-height: 1.2;
+			
+			&::placeholder {
+				color: #8B8B8B;
+			}
+			
+			@include media('<=lg') {
+				// font-size: 15px;
+			}
+		}
+		
+		input[type="submit"] {
+			@extend %reset-button;
+			width: 80px;
+			height: 100%;
+			background: url('#{$images-path}icons-sprite.svg#icon-zoom-view-black') center / 30px 29px no-repeat transparent;
+			opacity: 0.3;
+			
+			@include media('<=lg') {
+				width: 80px;
+				background-size: 32px 30px;
+				background-position: center;
+			}
+		}
+	}
+
+	&__ask {
+		width: 275px;
+		flex-shrink: 0;
+
+		@include media('<=lg') {
+			// width: 300px;
+		}
+		@include media('<=sm') {
+			width: 100%;
+			max-width: 330px !important;
+			margin: 0 auto;
+		}
+
+		&.button {
+			font-size: 15px;
+			height: 60px;
+			max-width: none;
+			
+			@include media('<=lg') {
+				height: 60px;
+			}
+		}
+	}
+}

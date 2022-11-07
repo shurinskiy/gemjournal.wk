@@ -1,0 +1,69 @@
+.p-comments {
+	$self: &;
+	margin: -110px 0 40px;
+	padding-top: 110px;
+	
+	@include media('<=xs') {
+		margin-top: -85px;
+		padding-top: 85px;
+	}
+
+	&__title {
+		font-family: "MEB", sans-serif;
+		line-height: 1.1;
+		font-size: 32px;
+		margin-bottom: 25px;
+
+		&.hidden {
+			display: none;
+		}
+		
+		@include media('<=lg') {
+			font-size: 30px;
+		}
+		
+		@include media('<=md') {
+			font-size: 26px;
+		}
+		
+		@include media('<=xxs') {
+			font-size: 24px;
+		}
+	}
+
+	&__card {
+
+	}
+
+	&__bottom {
+		display: flex;
+		align-items: center;
+
+		@include media('<=xs') {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__bottom-note {
+		margin-right: 30px;
+		font-family: "MB", sans-serif;
+		font-size: 16px;
+		color: #5057F1;
+
+		@include media('<=xs') {
+			margin: 0 0 30px;
+		}
+	}
+
+	&__bottom-singin {
+		&.button {
+			max-width: 240px;
+			font-size: 16px;
+			height: 50px;
+		}
+
+		@include media('<=xs') {
+			margin: 0 auto;
+		}
+	}
+}

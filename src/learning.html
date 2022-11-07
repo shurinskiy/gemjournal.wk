@@ -1,0 +1,56 @@
+@@include("_head.html") 
+@@include("_header.html")
+@@include("_hero.html", {"img":"hero-image-2.png"}) 
+
+<main class="layout">
+	<div class="layout__breadcrumbs breadcrumbs">
+		<div class="container">
+			<div class="breadcrumbs__inner">
+				<a href="./">Главная</a>
+				<a href="./">Обучение</a>
+			</div>
+		</div>
+	</div>
+
+	@@include("_wide-banner.html") 
+
+	<section class="learning">
+		<div class="container">
+			<div class="learning__title title"><h1 class="title__text">Обучение</h1></div>
+			<div class="learning__items">
+
+				@@include("_l-card.html", {
+					"cls":"learning__item",
+					"img":"learning-image-1.png"
+				}) 
+
+				@@include("_l-card.html", {
+					"cls":"learning__item",
+					"img":"learning-image-2.png"
+				}) 
+
+				@@include("_l-card.html", {
+					"cls":"learning__item",
+					"img":"learning-image-3.png"
+				}) 
+
+				@@include("_l-card.html", {
+					"cls":"learning__item",
+					"img":"learning-image-4.png"
+				}) 
+
+			</div>
+			<div class="learning__pagination pagination">
+				<a href="./" class="pagination__item active">1</a>
+				<a href="./" class="pagination__item">2</a>
+				<a href="./" class="pagination__item">3</a>
+				<a href="./" class="pagination__item">4</a>
+				<a href="./" class="pagination__item">5</a>
+				<span class="pagination__item pagination__item_pass">...</span>
+				<a href="./" class="pagination__item">50</a>
+			</div>
+		</div>
+	</section>
+</main>
+
+@@include("_bottom.html")

@@ -1,0 +1,108 @@
+@@include("_head.html") 
+@@include("_header.html")
+@@include("_hero.html", {"img":"hero-image-2.png"}) 
+
+<main class="layout">
+	<div class="layout__breadcrumbs breadcrumbs">
+		<div class="container">
+			<div class="breadcrumbs__inner">
+				<a href="./">Главная</a>
+				<a href="./">Вопросы</a>
+			</div>
+		</div>
+	</div>
+
+	@@include("_wide-banner.html") 
+
+	<div class="container">
+		<div class="title title_sort">
+			<h1 class="title__text">Вопросы</h1>
+			<div class="title__sort">
+				<span>Сортировка: </span>
+				<button class="active">Популярные</button>
+				<button>Новые</button>
+			</div>
+		</div>
+
+		<div class="q-controls">
+			<div class="q-controls__search">
+				<form action="./">
+					<input type="text" placeholder="Введите сюда интересующий Вас вопрос">
+					<input type="submit" value="">
+				</form>
+			</div>
+			<a class="q-controls__ask button button_solid button_lil" href="./" data-modal="comment-form">Задать свой вопрос</a>
+		</div>
+
+		<div class="layout__inner">
+			<div class="layout__content questions">
+				@@include("_q-card.html", {
+					"cls":"questions__card",
+					"tag":"SMM",
+					"closed":true
+				}) 
+
+				@@include("_q-card.html", {
+					"cls":"questions__card",
+					"tag":"Маркетинг"
+				}) 
+
+				@@include("_q-card.html", {
+					"cls":"questions__card",
+					"tag":"Аккаунты"
+				}) 
+
+				@@include("_q-card.html", {
+					"cls":"questions__card",
+					"tag":"SMM",
+					"closed":true
+				}) 
+
+				@@include("_q-card.html", {
+					"cls":"questions__card",
+					"tag":"SMM",
+					"closed":true
+				}) 
+
+				@@include("_q-card.html", {
+					"cls":"questions__card",
+					"tag":"Маркетинг"
+				}) 
+			</div>
+
+			<div class="layout__side sidebar">
+				<div class="sidebar__inner">
+					<a href="./" class="sidebar__card sidebar__card_banner card card_banner">
+						<img src="./images/stuff/banner-image-card-1.png" alt="">
+					</a>
+					<a href="./" class="sidebar__card sidebar__card_banner card card_banner">
+						<img src="./images/stuff/banner-image-card-2.png" alt="">
+					</a>
+					@@include("_card.html", {
+						"cls":"sidebar__card",
+						"img":"card-image-1.png",
+						"link":true
+					})
+					@@include("_card.html", {
+						"cls":"sidebar__card",
+						"img":"card-image-2.png",
+						"link":true
+					})
+					
+				</div>
+			</div>
+			
+			<div class="main__pagination pagination">
+				<a href="./" class="pagination__item active">1</a>
+				<a href="./" class="pagination__item">2</a>
+				<a href="./" class="pagination__item">3</a>
+				<a href="./" class="pagination__item">4</a>
+				<a href="./" class="pagination__item">5</a>
+				<span class="pagination__item pagination__item_pass">...</span>
+				<a href="./" class="pagination__item">50</a>
+			</div>
+		</div>
+	</div>
+</main>
+
+@@include("_bottom.html")

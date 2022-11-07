@@ -1,0 +1,420 @@
+@@include("_head.html", {"class":"home"}) 
+@@include("_header.html") 
+@@include("_hero.html", {"img":"hero-image-1.png"})
+
+<main class="layout">
+	<section class="h-popular">
+		<div class="container">
+			<div class="h-popular__title title"><h2 class="title__text">Популярные материалы</h2></div>
+			<div class="h-popular__inner">
+				<div class="h-popular__card card card_large">
+					<a class="card__image" href="./"><img src="./images/stuff/card-image-big-1.png" alt=""></a>
+					<div class="card__content">
+						<div class="card__tags"><a href="./">Руководства</a></div>
+						<h3 class="card__title">Домонетизация трафика через Propush.me: до +35% к профиту</h3>
+						<div class="card__text">
+							<p>Никто же не будет спорить, что заливаться с бонусом выгоднее, даже если он совсем небольшой? Ведь на объемах вы получите существенную выгоду. Бонусы нужны даже топовым арбитражным командам, но они...</p>
+						</div>
+						<div class="card__bottom">
+							<div class="card__since">5 часов назад</div>
+							<a class="card__link" href="./">Желтый веб</a>
+						</div>
+					</div>
+				</div>
+	
+				@@include("_card.html", {
+					"cls":"h-popular__card",
+					"img":"card-image-1.png"
+				})
+	
+				@@include("_card.html", {
+					"cls":"h-popular__card",
+					"img":"card-image-8.png"
+				})
+	
+				<a class="h-popular__card card card_banner" href="./">
+					<img src="./images/stuff/banner-image-tall-1.png" alt="">
+				</a>
+			</div>
+		</div>
+	</section>
+
+	@@include("_wide-banner.html") 
+
+	<section class="feed">
+		<div class="container">
+			<div class="feed__title title title_feed">
+				<h2 class="title__text">Свежие статьи</h2>
+				<a class="title__button button button_outlined" href="./">Открыть все статьи</a>
+			</div>
+			<div class="feed__items">
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-1.png",
+					"link":true
+				})
+	
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-2.png",
+					"link":true
+				})
+	
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-3.png",
+					"link":true
+				})
+	
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-4.png",
+					"link":true
+				})
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-5.png",
+					"link":true
+				})
+	
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-6.png",
+					"link":true
+				})
+	
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-7.png",
+					"link":true
+				})
+	
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-8.png",
+					"link":true
+				})
+			</div>
+			<a class="feed__all-btn button button_outlined" href="./">Открыть все статьи</a>
+		</div>
+	</section>
+
+	<section class="h-slider">
+		<div class="container">
+			<div class="h-slider__title title title_slider">
+				<h2 class="title__text">Новости</h2>
+				<a class="title__link" href="./">Открыть все</a>
+			</div>
+			<div class="h-slider__inner swiper">
+				<div class="h-slider__navi">
+					<button class="h-slider__prev"></button>
+					<button class="h-slider__next"></button>
+				</div>
+				<div class="swiper-wrapper">
+					<div class="h-slider__slide swiper-slide">
+						<h3 class="h-slider__cup">Домонетизация трафика через Propush.me: до +35% к профиту</h3>
+						<p class="h-slider__excerpt">Никто же не будет спорить, что залив...</p>
+						<div class="h-slider__bottom">
+							<span class="h-slider__bottom-since">5 часов назад</span>
+						</div>
+					</div>
+					<div class="h-slider__slide swiper-slide">
+						<h3 class="h-slider__cup">Домонетизация трафика через Propush.me: до +35% к профиту</h3>
+						<p class="h-slider__excerpt">Никто же не будет спорить, что залив...</p>
+						<div class="h-slider__bottom">
+							<span class="h-slider__bottom-since">5 часов назад</span>
+						</div>
+					</div>
+					<div class="h-slider__slide swiper-slide">
+						<h3 class="h-slider__cup">Домонетизация трафика через Propush.me: до +35% к профиту</h3>
+						<p class="h-slider__excerpt">Никто же не будет спорить, что залив...</p>
+						<div class="h-slider__bottom">
+							<span class="h-slider__bottom-since">5 часов назад</span>
+						</div>
+					</div>
+					<div class="h-slider__slide swiper-slide">
+						<h3 class="h-slider__cup">Домонетизация трафика через Propush.me: до +35% к профиту</h3>
+						<p class="h-slider__excerpt">Никто же не будет спорить, что залив...</p>
+						<div class="h-slider__bottom">
+							<span class="h-slider__bottom-since">5 часов назад</span>
+						</div>
+					</div>
+					<div class="h-slider__slide swiper-slide">
+						<h3 class="h-slider__cup">Домонетизация трафика через Propush.me: до +35% к профиту</h3>
+						<p class="h-slider__excerpt">Никто же не будет спорить, что залив...</p>
+						<div class="h-slider__bottom">
+							<span class="h-slider__bottom-since">5 часов назад</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="h-slider__all-link" href="./">Открыть все</a>
+		</div>
+	</section>
+
+	<section class="feed">
+		<div class="container">
+			<div class="feed__title title">
+				<h2 class="title__text">Блоги компаний</h2>
+				<a class="title__button button button_outlined" href="./">Открыть все блоги</a>
+			</div>
+			<div class="feed__items">
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-1.png"
+				})
+				
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-2.png"
+				})
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-3.png"
+				})
+				
+				@@include("_card.html", {
+					"cls":"feed__item",
+					"img":"card-image-4.png"
+				})
+			</div>
+			<a class="feed__all-btn button button_outlined" href="./">Открыть все блоги</a>
+		</div>
+	</section>
+
+	<section class="p-slider">
+		<div class="container">
+			<div class="p-slider__title title title_white">
+				<h2 class="title__text">Вопрос/ответ</h2>
+				<a class="title__link" href="./">Открыть все</a>
+				<div class="title__side p-slider__navi">
+					<button class="p-slider__prev"></button>
+					<button class="p-slider__next"></button>
+				</div>
+			</div>
+			<div class="p-slider__inner swiper">
+				<div class="swiper-wrapper">
+					@@include("_card.html", {
+						"cls":"p-slider__slide swiper-slide",
+						"text":true,
+						"talk":true
+					})
+
+					@@include("_card.html", {
+						"cls":"p-slider__slide swiper-slide",
+						"text":true,
+						"talk":true
+					})
+
+					@@include("_card.html", {
+						"cls":"p-slider__slide swiper-slide",
+						"text":true,
+						"talk":true
+					})
+
+					@@include("_card.html", {
+						"cls":"p-slider__slide swiper-slide",
+						"text":true,
+						"talk":true
+					})
+
+					@@include("_card.html", {
+						"cls":"p-slider__slide swiper-slide",
+						"text":true,
+						"talk":true
+					})
+
+					@@include("_card.html", {
+						"cls":"p-slider__slide swiper-slide",
+						"text":true,
+						"talk":true
+					})
+				</div>
+			</div>
+			<a class="p-slider__all-link" href="./">Открыть все</a>
+		</div>
+	</section>
+
+	<section class="h-rows">
+		<div class="container tab">
+			<div class="h-rows__title title title_tab">
+				<h2 class="title__text">Партнерки</h2>
+				<div class="title__tab tab__buttons">
+					<button class="tab__button active">Топовые</button>
+					<button class="tab__button">Новые</button>
+				</div>
+				<a class="title__button button button_solid" href="./">Все партнерки</a>
+			</div>
+			<div class="h-rows__items tab__block active">
+				<div class="h-rows__item">
+					<div class="h-rows__marker h-rows__marker_top"></div>
+					<a class="h-rows__logo" href="./"><img src="./images/stuff/rows-image-1.png" alt=""></a>
+					<div class="h-rows__text">Leadshub — Монетизируй свой трафик по лучшим условиям Gambling рынка!</div>
+					<a class="h-rows__button" href="./">Перейти на сайт</a>
+				</div>
+				<div class="h-rows__item">
+					<div class="h-rows__marker">1</div>
+					<a class="h-rows__logo" href="./"><img src="./images/stuff/rows-image-2.png" alt=""></a>
+					<div class="h-rows__text">ADBID — сочные гемблинг офферы и много бесплатных опций только для партнеров сети.</div>
+					<a class="h-rows__button" href="./">Перейти на сайт</a>
+				</div>
+				<div class="h-rows__item">
+					<div class="h-rows__marker">2</div>
+					<a class="h-rows__logo" href="./"><img src="./images/stuff/rows-image-3.png" alt=""></a>
+					<div class="h-rows__text">FizzPartners — партнерская программа от лицензированного казино FizzSlots!</div>
+					<a class="h-rows__button" href="./">Перейти на сайт</a>
+				</div>
+				<div class="h-rows__item">
+					<div class="h-rows__marker">3</div>
+					<a class="h-rows__logo" href="./"><img src="./images/stuff/rows-image-2.png" alt=""></a>
+					<div class="h-rows__text">ADBID — сочные гемблинг офферы и много бесплатных опций только для партнеров сети.</div>
+					<a class="h-rows__button" href="./">Перейти на сайт</a>
+				</div>
+				<div class="h-rows__item">
+					<div class="h-rows__marker">4</div>
+					<a class="h-rows__logo" href="./"><img src="./images/stuff/rows-image-3.png" alt=""></a>
+					<div class="h-rows__text">FizzPartners — партнерская программа от лицензированного казино FizzSlots!</div>
+					<a class="h-rows__button" href="./">Перейти на сайт</a>
+				</div>
+			</div>
+			<div class="h-rows__items tab__block">
+				<div class="h-rows__item">
+					<div class="h-rows__marker">1</div>
+					<a class="h-rows__logo" href="./"><img src="./images/stuff/rows-image-4.png" alt=""></a>
+					<div class="h-rows__text">Трекер для анализа и распределения трафика. Поддерживает сегментацию по срезам, блек-листы, антибот-фильтр, сплит-тестирование и многое другое.</div>
+					<a class="h-rows__button" href="./">Перейти на сайт</a>
+				</div>
+				<div class="h-rows__item">
+					<div class="h-rows__marker">2</div>
+					<a class="h-rows__logo" href="./"><img src="./images/stuff/rows-image-5.png" alt=""></a>
+					<div class="h-rows__text">Облачный трекер, анализирующий, распределяющий и оптимизирующий рекламные кампании арбитражника. Главная особенность — наличие полноценной бесплатной версии.</div>
+					<a class="h-rows__button" href="./">Перейти на сайт</a>
+				</div>
+				<div class="h-rows__item">
+					<div class="h-rows__marker">3</div>
+					<a class="h-rows__logo" href="./"><img src="./images/stuff/rows-image-6.png" alt=""></a>
+					<div class="h-rows__text">Binom — профессиональный self-hosted трекер с самой быстрой обработкой кликов и построением отчетов.</div>
+					<a class="h-rows__button" href="./">Перейти на сайт</a>
+				</div>
+			</div>
+			<a class="h-rows__all-btn button button_solid" href="./">Все партнерки</a>
+		</div>
+	</section>
+
+	<section class="h-rows">
+		<div class="container">
+			<div class="h-rows__title title">
+				<h2 class="title__text">Сервисы</h2>
+				<a class="title__button button button_solid" href="./">Все сервисы</a>
+			</div>
+			<div class="h-rows__items">
+				<div class="h-rows__item">
+					<div class="h-rows__marker">1</div>
+					<a class="h-rows__logo" href="./"><img src="./images/stuff/rows-image-4.png" alt=""></a>
+					<div class="h-rows__text">Трекер для анализа и распределения трафика. Поддерживает сегментацию по срезам, блек-листы, антибот-фильтр, сплит-тестирование и многое другое.</div>
+					<a class="h-rows__button" href="./">Перейти на сайт</a>
+				</div>
+				<div class="h-rows__item">
+					<div class="h-rows__marker">2</div>
+					<a class="h-rows__logo" href="./"><img src="./images/stuff/rows-image-5.png" alt=""></a>
+					<div class="h-rows__text">Облачный трекер, анализирующий, распределяющий и оптимизирующий рекламные кампании арбитражника. Главная особенность — наличие полноценной бесплатной версии.</div>
+					<a class="h-rows__button" href="./">Перейти на сайт</a>
+				</div>
+				<div class="h-rows__item">
+					<div class="h-rows__marker">3</div>
+					<a class="h-rows__logo" href="./"><img src="./images/stuff/rows-image-6.png" alt=""></a>
+					<div class="h-rows__text">Binom — профессиональный self-hosted трекер с самой быстрой обработкой кликов и построением отчетов.</div>
+					<a class="h-rows__button" href="./">Перейти на сайт</a>
+				</div>
+			</div>
+			<a class="h-rows__all-btn button button_solid" href="./">Все сервисы</a>
+		</div>
+	</section>
+
+	<section class="h-rows">
+		<div class="container">
+			<div class="h-rows__title title">
+				<h2 class="title__text">Рекламные сети</h2>
+				<a class="title__button button button_solid" href="./">Все рекламные сети</a>
+			</div>
+			<div class="h-rows__items">
+				<div class="h-rows__item">
+					<div class="h-rows__marker">1</div>
+					<a class="h-rows__logo" href="./"><img src="./images/stuff/rows-image-4.png" alt=""></a>
+					<div class="h-rows__text">Трекер для анализа и распределения трафика. Поддерживает сегментацию по срезам, блек-листы, антибот-фильтр, сплит-тестирование и многое другое.</div>
+					<a class="h-rows__button" href="./">Перейти на сайт</a>
+				</div>
+				<div class="h-rows__item">
+					<div class="h-rows__marker">2</div>
+					<a class="h-rows__logo" href="./"><img src="./images/stuff/rows-image-5.png" alt=""></a>
+					<div class="h-rows__text">Облачный трекер, анализирующий, распределяющий и оптимизирующий рекламные кампании арбитражника. Главная особенность — наличие полноценной бесплатной версии.</div>
+					<a class="h-rows__button" href="./">Перейти на сайт</a>
+				</div>
+				<div class="h-rows__item">
+					<div class="h-rows__marker">3</div>
+					<a class="h-rows__logo" href="./"><img src="./images/stuff/rows-image-6.png" alt=""></a>
+					<div class="h-rows__text">Binom — профессиональный self-hosted трекер с самой быстрой обработкой кликов и построением отчетов.</div>
+					<a class="h-rows__button" href="./">Перейти на сайт</a>
+				</div>
+			</div>
+			<a class="h-rows__all-btn button button_solid" href="./">Все сервисы</a>
+		</div>
+	</section>
+
+	<section class="h-slider">
+		<div class="container">
+			<div class="h-slider__title title title_slider">
+				<h2 class="title__text">Вакансии</h2>
+				<a class="title__link" href="./">Открыть все</a>
+			</div>
+			<div class="h-slider__inner swiper">
+				<div class="h-slider__navi">
+					<button class="h-slider__prev"></button>
+					<button class="h-slider__next"></button>
+				</div>
+				<div class="swiper-wrapper">
+					<div class="h-slider__slide swiper-slide">
+						<div class="h-slider__top">
+							<span class="h-slider__top-since">5 часов назад</span>
+							<!-- <span class="h-slider__top-time">16 декабря 2021</span> -->
+							<!-- <span class="h-slider__top-location">Украина, Киев</span> -->
+						</div>
+						<h3 class="h-slider__cup">Медиабайер в DATS.TEAM</h3>
+						<p class="h-slider__text">Reliz - диджитал-агентство мобильного перфоманс маркетинга. Создаем креативы и продвигаем мобильные приложения для крупных рекламодателей по всему миру.</p>
+					</div>
+					<div class="h-slider__slide swiper-slide">
+						<div class="h-slider__top">
+							<span class="h-slider__top-since">5 часов назад</span>
+						</div>
+						<h3 class="h-slider__cup">Медиабайер в DATS.TEAM</h3>
+						<p class="h-slider__text">Reliz - диджитал-агентство мобильного перфоманс маркетинга. Создаем креативы и продвигаем мобильные приложения для крупных рекламодателей по всему миру.</p>
+					</div>
+					<div class="h-slider__slide swiper-slide">
+						<div class="h-slider__top">
+							<span class="h-slider__top-since">5 часов назад</span>
+						</div>
+						<h3 class="h-slider__cup">Медиабайер в DATS.TEAM</h3>
+						<p class="h-slider__text">Reliz - диджитал-агентство мобильного перфоманс маркетинга. Создаем креативы и продвигаем мобильные приложения для крупных рекламодателей по всему миру.</p>
+					</div>
+					<div class="h-slider__slide swiper-slide">
+						<div class="h-slider__top">
+							<span class="h-slider__top-since">5 часов назад</span>
+						</div>
+						<h3 class="h-slider__cup">Медиабайер в DATS.TEAM</h3>
+						<p class="h-slider__text">Reliz - диджитал-агентство мобильного перфоманс маркетинга. Создаем креативы и продвигаем мобильные приложения для крупных рекламодателей по всему миру.</p>
+					</div>
+					<div class="h-slider__slide swiper-slide">
+						<div class="h-slider__top">
+							<span class="h-slider__top-since">5 часов назад</span>
+						</div>
+						<h3 class="h-slider__cup">Медиабайер в DATS.TEAM</h3>
+						<p class="h-slider__text">Reliz - диджитал-агентство мобильного перфоманс маркетинга. Создаем креативы и продвигаем мобильные приложения для крупных рекламодателей по всему миру.</p>
+					</div>
+				</div>
+			</div>
+			<a class="h-slider__all-link" href="./">Открыть все</a>
+		</div>
+	</section>
+</main>
+
+@@include("_bottom.html")

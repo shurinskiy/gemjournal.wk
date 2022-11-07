@@ -1,0 +1,164 @@
+.title {
+	$self: &;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+
+	&_slider {
+		min-height: 45px;
+		padding-right: 120px;
+		margin-bottom: -45px;
+	}
+
+	&_white {
+		#{$self}__text {
+			color: #fff;
+		}
+		
+		#{$self}__link {
+			color: #fff;
+		}
+	}
+
+	&_sort {
+		@include media('<=sm') {
+			display: block;
+		}
+	}
+
+	&_tab {
+		@include media('<=md') {
+			display: block;
+
+			#{$self}__side {
+				display: none;
+			}
+
+			#{$self}__text {
+				margin-bottom: 30px;				
+			}
+
+			#{$self}__tab {
+				margin: 0;
+			}
+		}
+	}
+
+	&__text {
+		font-family: "MEB", sans-serif;
+		font-size: 30px;
+		line-height: 1.2;
+		
+		@include media('<=xlg') {
+			font-size: 32px;
+		}
+		
+		@include media('<=xxs') {
+			font-size: 27px;
+		}
+	}
+
+	&__link {
+		margin-left: 28px;
+		font-family: "MSB", sans-serif;
+		font-size: 17px;
+		white-space: nowrap;
+		// color: #9C4FFE;
+		
+		@include media('<=xxxlg') {
+			// font-size: 20px;
+		}
+
+		@include media('<=xs') {
+			display: none;
+		}
+	}
+
+	&__tab {
+		display: flex;
+		align-items: center;
+		margin-left: 35px;
+
+		button {
+			@extend %reset-button;
+			margin-right: 20px;
+			font-family: "MB", sans-serif;
+			font-size: 19px;
+			padding-top: 5px;
+			line-height: 1.4;
+
+			&.active {
+				text-decoration: underline;
+				color: #6456ff;
+			}
+			
+			@include media('<=xxxlg') {
+				// font-size: 22px;
+			}
+		}
+	}
+
+	&__button {
+		margin-left: auto;
+
+		@include media('<=md') {
+			display: none;
+		}
+	}
+
+	&__side {
+		margin-left: auto;
+	}
+
+	&__sort {
+		margin-left: auto;
+		display: flex;
+		align-items: center;
+		
+		@include media('<=lg') {
+			padding-top: 15px;
+		}
+		
+		@include media('<=xxs') {
+			display: block;
+		}
+		
+		span {
+			font-size: 17px;
+			color: #5B5B5B;
+
+			@include media('<=xs') {
+				// font-size: 18px;
+			}
+
+			@include media('<=sm') {
+				margin-right: auto;
+			}
+
+			@include media('<=xxs') {
+				display: block;
+				margin-bottom: 5px;
+			}
+		}
+		
+		button, input[type="submit"] {
+			@extend %reset-button;
+			margin-left: 15px;
+			font-size: 17px;
+			font-family: "MSB", sans-serif;
+			
+			&.active {
+				color: #9C4EFF;
+				font-family: "MB", sans-serif;
+			}
+
+			@include media('<=xs') {
+				font-size: 18px;
+			}
+
+			@include media('<=xs') {
+				margin: 0 15px 0 0;
+			}
+		}
+	}
+}

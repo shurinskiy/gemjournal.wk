@@ -1,0 +1,55 @@
+.pagination {
+	$self: &;
+	display: flex;
+	line-height: 1.0;
+	justify-content: center;
+	padding-top: 30px;
+	margin: 0 auto 50px;
+	width: 100%;
+
+	@include media('<=md') {
+		padding-top: 0;
+		margin-bottom: 40px;
+	}
+
+	&__item {
+		display: block;
+		box-sizing: border-box;
+		border-radius: 10px;
+		width: 50px;
+		height: 50px;
+		font-size: 18px;
+		background-color: #fff;
+		text-decoration: none;
+		color: #000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 4px;
+
+		&.current {
+			color: #fff;
+			background: linear-gradient(45deg, #6456FF 0%, #9B93FF 100%);
+		}
+	
+		&_pass {
+	
+		}
+
+		&_prev {
+
+		}
+	
+		&_next {
+	
+		}
+
+		@include media('<=xxs') {
+			margin: 0 3px;
+			border-radius: 8px;
+			width: 38px;
+			height: 38px;
+			font-size: 14px;
+		}
+	}
+}
